@@ -1,0 +1,230 @@
+{
+  "nav": {
+    "blog": "博客",
+    "projects": "个人项目",
+    "opensource": "开源",
+    "timeline": "时间轴",
+    "awards": "荣誉",
+    "skills": "技术栈"
+  },
+  "meta": {
+    "homeTitle": "XC | 机器人运动控制与机械结构设计",
+    "blogTitle": "博客 | XC",
+    "project1Title": "RoboMaster 2025 步兵机器人 | XC",
+    "project2Title": "ROBOCON 2026 仿生足式机器人 | XC",
+    "project3Title": "西门子杯 2026 工业嵌入式系统 | XC",
+    "project4Title": "RoboMaster 2026 3V3 对抗机器人 | XC"
+  },
+  "intro": {
+    "avatarAlt": "XC的头像",
+    "title": "你好，我是XC",
+    "desc": "南京邮电大学邮政工程 2024 级本科生（大三），聚焦机器人机械结构、嵌入式硬件与运动控制。<br>参与 RoboMaster、ROBOCON 与西门子杯等竞赛项目，能够完成方案设计、装配调试、系统联调与现场问题闭环。<br>正在把比赛复盘、调试记录和工程方法整理成公开笔记。<br>邮箱：209358371@qq.com"
+  },
+  "home": {
+    "eyebrow": "作品集",
+    "lead": "这里是我的个人作品集。",
+    "primaryCta": "查看项目作品",
+    "secondaryCta": "访问博客"
+  },
+  "projects": {
+    "kicker": "Projects",
+    "title": "代表项目",
+    "mediaReserved": "方案与文档",
+    "mediaHint": "该项目以方案与文档为主，现场照片暂未整理。",
+    "sectionDesc": "四段竞赛经历，从步兵机械结构、ROBOCON 电控与运动控制，到西门子杯硬件设计与 RoboMaster 赛场联调。",
+    "viewDetail": "查看详情",
+    "item1": {
+      "title": "RoboMaster 2025 步兵机器人",
+      "desc": "主导步兵机器人机械系统方案设计，完成全向轮底盘、Yaw/Pitch 云台传动与整机布局；负责零部件采购、外发加工、装配交付与赛前改进。",
+      "meta": "步兵组机械组长 · 2024.09–2025.04",
+      "award": "3V3 非甲级对抗赛三等奖",
+      "imageAlt": "RoboMaster 2025 上海站步兵机器人"
+    },
+    "item2": {
+      "title": "ROBOCON 2026 仿生足式机器人",
+      "desc": "负责电机调试、底层通信、运动控制算法与整机联调；面向复杂地形迭代控制策略，建立模块测试、整机联调与赛场复测流程。",
+      "meta": "电控组组长 · 2026.03–2026.07",
+      "award": "障碍赛全国二等奖 · 任务赛全国三等奖",
+      "imageAlt": "ROBOCON 2026 仿生足式机器人"
+    },
+    "item3": {
+      "title": "西门子杯 2026 工业嵌入式系统",
+      "desc": "负责工业嵌入式系统硬件方案，使用立创EDA完成原理图与板级设计；配合软件完成系统联调与现场问题闭环。",
+      "meta": "硬件负责人 · 2026.05–2026.07",
+      "award": "全国初赛一等奖",
+      "placeholderLabel": "硬件设计",
+      "placeholderHint": "原理图与板级设计为主，现场照片暂未整理。"
+    },
+    "item4": {
+      "title": "RoboMaster 2026 3V3 对抗机器人",
+      "desc": "参与 3V3 非甲级对抗机器人研发与赛场联调，围绕机构装配、系统适配和现场问题排查推进整机交付。",
+      "meta": "3V3 非甲级对抗项目成员 · 2026.01–2026.04",
+      "award": "3V3 非甲级对抗赛一等奖",
+      "imageAlt": "RoboMaster 2026 江苏站 3V3 对抗机器人"
+    }
+  },
+  "project1": {
+    "kicker": "RoboMaster 2025",
+    "title": "RoboMaster 2025 上海站 · 步兵机器人",
+    "role": "步兵组机械组长",
+    "period": "2024.09–2025.04",
+    "award": "3V3 非甲级对抗赛三等奖",
+    "mediaAlt": "RoboMaster 2025 上海站步兵机器人",
+    "mediaCaption": "RoboMaster 2025 上海站 · 步兵机器人",
+    "desc": "主导步兵机器人机械系统方案设计，完成全向轮底盘、Yaw/Pitch 云台传动和整机结构布局，协调机械系统与电控、算法接口。<br><br>负责零部件采购、外发加工和装配交付，完成机器人整机装配、结构检查及赛前改进。<br><br>配合电控与算法团队开展底盘运动、云台传动和整机控制联调，定位并处理结构干涉、装配适配和机构运行问题。<br><br><strong>技术要点</strong><ul><li>全向轮底盘与 Yaw/Pitch 云台传动设计</li><li>整机结构布局与机械/电控/算法接口协调</li><li>装配、结构检查与赛场问题闭环</li></ul>"
+  },
+  "project2": {
+    "kicker": "ROBOCON 2026",
+    "title": "ROBOCON 2026 · 仿生足式机器人",
+    "role": "电控组组长",
+    "period": "2026.03–2026.07",
+    "award": "障碍赛全国二等奖 · 任务赛全国三等奖",
+    "mediaAlt": "ROBOCON 2026 仿生足式机器人",
+    "mediaCaption": "ROBOCON 2026 · 仿生足式机器人",
+    "mediaAlt2": "南京邮电大学 ROBOCON 2026 代表队与机器人合影",
+    "mediaCaption2": "南京邮电大学 ROBOCON 2026 代表队",
+    "desc": "负责电机调试、底层通信、运动控制算法和整机联调，完成驱动器、传感器与主控之间的接口验证。<br><br>面向复杂地形和连续任务，迭代电机参数与运动控制策略，提升机器人动作稳定性与任务执行一致性。<br><br>按模块测试、整机联调和赛场复测建立验证流程，定位并闭环处理通信、执行器和策略参数问题；根据赛场规则完成任务流程适配。<br><br><strong>技术要点</strong><ul><li>电机参数整定与底层通信接口验证</li><li>复杂地形下的运动控制策略迭代</li><li>模块测试、整机联调与赛场复测流程</li></ul>",
+    "links": {
+      "code": "控制框架"
+    }
+  },
+  "project3": {
+    "kicker": "Siemens Cup 2026",
+    "title": "西门子杯 2026 · 工业嵌入式系统",
+    "role": "硬件负责人",
+    "period": "2026.05–2026.07",
+    "award": "全国初赛一等奖",
+    "desc": "负责工业嵌入式系统硬件部分，依据赛题需求拆分控制器、传感器、执行器和通信接口，完成硬件方案设计。<br><br>使用立创EDA完成硬件原理图与板级设计，围绕系统功能和接口约束推进器件选型、信号链路与调试准备。<br><br>配合软件开发开展系统联调，针对现场问题进行硬件排查、修改和复测，支撑赛题功能稳定实现。<br><br><strong>技术要点</strong><ul><li>控制器、传感器、执行器与通信接口拆分</li><li>立创EDA 原理图与 PCB 板级设计</li><li>硬件排查、修改与系统联调</li></ul>"
+  },
+  "project4": {
+    "kicker": "RoboMaster 2026",
+    "title": "RoboMaster 2026 江苏站 · 3V3 对抗机器人",
+    "role": "3V3 非甲级对抗项目成员",
+    "period": "2026.01–2026.04",
+    "award": "3V3 非甲级对抗赛一等奖",
+    "mediaAlt": "RoboMaster 2026 江苏站 3V3 对抗机器人",
+    "mediaCaption": "RoboMaster 2026 江苏站 · 3V3 对抗机器人",
+    "desc": "参与 3V3 非甲级对抗机器人研发与赛场联调，围绕机构装配、系统适配和现场问题排查推进整机交付。<br><br>配合队伍完成赛前测试、故障复现和临场调试，支撑机器人在对抗环境中的稳定运行。<br><br><strong>技术要点</strong><ul><li>机构装配与系统适配</li><li>赛前测试与故障复现</li><li>临场调试与整机交付</li></ul>"
+  },
+  "projects1": {
+    "mediaTitle": "现场记录",
+    "mediaDesc": "来自比赛与调试现场的照片。",
+    "roleLabel": "角色",
+    "periodLabel": "时间",
+    "awardLabel": "奖项"
+  },
+  "awards": {
+    "kicker": "Awards",
+    "title": "荣誉奖项",
+    "desc": "竞赛奖项与阶段性成果。",
+    "item1": {
+      "date": "2026.07",
+      "title": "第二十五届全国大学生机器人大赛 ROBOCON 仿生足式机器人挑战赛 · 障碍赛",
+      "level": "全国二等奖"
+    },
+    "item2": {
+      "date": "2026.07",
+      "title": "第二十五届全国大学生机器人大赛 ROBOCON 仿生足式机器人挑战赛 · 任务赛",
+      "level": "全国三等奖"
+    },
+    "item3": {
+      "date": "2026.07",
+      "title": "2026 年“西门子杯”中国智能制造挑战赛全国初赛 · 工业嵌入式系统开发方向",
+      "level": "全国初赛一等奖"
+    },
+    "item4": {
+      "date": "2026.04",
+      "title": "第二十五届全国大学生机器人大赛 RoboMaster 2026 机甲大师高校联盟赛（江苏站）· 3V3 非甲级对抗赛",
+      "level": "一等奖"
+    },
+    "item5": {
+      "date": "2025.04",
+      "title": "第二十四届全国大学生机器人大赛 RoboMaster 2025 机甲大师高校联盟赛（上海站）· 3V3 非甲级对抗赛",
+      "level": "三等奖"
+    }
+  },
+  "opensource": {
+    "kicker": "Code",
+    "title": "开源仓库",
+    "desc": "我的开源项目与工程实践。",
+    "btnCode": "代码仓库",
+    "btnDoc": "在线文档",
+    "item1": {
+      "title": "26Initial-RC-dog",
+      "desc": "ROBOCON 2026 RC-Dog 控制框架，基于达妙 MC02（STM32H723VGT6），正在向 XRobot/libxr 架构迁移。",
+      "tags": [
+        "ROBOCON",
+        "STM32",
+        "C++",
+        "Control"
+      ]
+    },
+    "item2": {
+      "title": "CyberBeast 驱动板参数标定",
+      "desc": "海泰 7015 驱动器电机参数标定工具，用于守护兽驱动板调试。",
+      "tags": [
+        "Motor Control",
+        "Calibration",
+        "Embedded"
+      ]
+    }
+  },
+  "timeline": {
+    "title": "经历时间轴",
+    "event1": {
+      "date": "2026.07",
+      "title": "ROBOCON 2026 与西门子杯双线收官",
+      "desc": "作为 ROBOCON 电控组组长获障碍赛全国二等奖、任务赛全国三等奖；作为西门子杯硬件负责人获全国初赛一等奖。"
+    },
+    "event2": {
+      "date": "2026.01–2026.04",
+      "title": "RoboMaster 2026 江苏站",
+      "desc": "参与 3V3 非甲级对抗机器人研发与赛场联调，围绕机构装配、系统适配和现场问题排查推进整机交付，获江苏站一等奖。"
+    },
+    "event3": {
+      "date": "2025.04",
+      "title": "RoboMaster 2025 上海站",
+      "desc": "担任步兵组机械组长，主导全向轮底盘、Yaw/Pitch 云台传动与整机结构布局，获 3V3 非甲级对抗赛三等奖。"
+    },
+    "event4": {
+      "date": "2024.09–2025.09",
+      "title": "校科协骨干成员",
+      "desc": "参与校内科技活动组织与技术交流，协助成员培养和项目活动执行，参与学校科创成果展示。"
+    },
+    "event5": {
+      "date": "2024.09–至今",
+      "title": "Xrobot 机器人社团创始成员",
+      "desc": "从零参与机器人战队和社团建设，推动机械、电控与算法方向的人员组织、项目分工和训练流程落地；参与新生培养与技术传承。"
+    },
+    "event6": {
+      "date": "2024.09",
+      "title": "进入南京邮电大学",
+      "desc": "就读邮政工程本科，确定机器人与嵌入式方向，开始系统补齐机械、电控与控制基础。"
+    }
+  },
+  "skills": {
+    "kicker": "Stack",
+    "title": "技术栈",
+    "desc": "从机械结构、嵌入式硬件到运动控制与仿真，这些是我在项目中实际使用的工具和方法。",
+    "embedded": "嵌入式与硬件",
+    "robotics": "控制与仿真",
+    "software": "工具链",
+    "hardware": "机械与结构"
+  },
+  "contact": {
+    "github": "GitHub",
+    "email": "邮箱"
+  },
+  "footer": {
+    "copyright": "© 2024-2026 XC-star3 (XC) · 209358371@qq.com"
+  },
+  "accessibility": {
+    "skipToContent": "跳到主要内容"
+  },
+  "blogStatus": {
+    "kicker": "COMING SOON",
+    "title": "博客网站还在开发",
+    "description": "独立博客正在搭建中。准备好后，这里的入口将直接带你前往博客网站。",
+    "backHome": "返回首页"
+  }
+}

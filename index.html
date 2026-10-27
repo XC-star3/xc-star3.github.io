@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-title-i18n="meta.homeTitle">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XC | 机器人运动控制与机械结构设计</title>
+  <meta name="description" content="XC-star3（XC），南京邮电大学邮政工程本科生，专注机器人机械结构、嵌入式硬件与运动控制。RoboMaster、ROBOCON、西门子杯竞赛作品集。">
+  <meta name="author" content="XC-star3">
+
+  <script>
+    (() => {
+      let savedTheme;
+      try { savedTheme = localStorage.getItem('theme'); } catch {}
+      const theme = savedTheme === 'dark' || savedTheme === 'light' ? savedTheme
+        : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+
+    (function () {
+      const introKey = 'homepage_intro_seen_session';
+      const params = new URLSearchParams(window.location.search);
+
+      let introSeen = false;
+      try { introSeen = sessionStorage.getItem(introKey) === 'done'; } catch (e) {}
+
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const forceIntro = params.get('intro') === '1';
+      const skipIntro = !forceIntro && (introSeen || reduceMotion || params.get('nointro') === '1');
+
+      if (!skipIntro) {
+        document.documentElement.classList.add('opening-pending');
+      }
+
+      try { sessionStorage.setItem(introKey, 'done'); } catch (e) {}
+      // If the enhancement scripts fail, release the readable static page.
+      window.setTimeout(() => {
+        if (!window.SiteInitialized) {
+          document.documentElement.classList.remove('opening-pending');
+        }
+      }, 6000);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta content="website" property="og:type">
+  <meta content="XC" property="og:site_name">
+  <meta content="XC | 机器人运动控制与机械结构设计" property="og:title">
+  <meta content="XC-star3（XC），南京邮电大学邮政工程本科生，专注机器人机械结构、嵌入式硬件与运动控制。RoboMaster、ROBOCON、西门子杯竞赛作品集。" property="og:description">
+  <meta content="https://xc-star3.github.io/" property="og:url">
+  <meta content="https://xc-star3.github.io/assets/images/Avatar.jpg" property="og:image">
+  <meta content="XC的头像" property="og:image:alt">
+  <meta content="zh_CN" property="og:locale">
+  <meta content="summary" name="twitter:card">
+  <meta content="XC | 机器人运动控制与机械结构设计" name="twitter:title">
+  <meta content="XC-star3（XC），南京邮电大学邮政工程本科生，专注机器人机械结构、嵌入式硬件与运动控制。RoboMaster、ROBOCON、西门子杯竞赛作品集。" name="twitter:description">
+  <meta content="https://xc-star3.github.io/assets/images/Avatar.jpg" name="twitter:image">
+  <link href="https://xc-star3.github.io/" rel="canonical">
+  <script type="application/ld+json" id="page-schema">{"@context":"https://schema.org","@type":"WebPage","name":"XC | 机器人运动控制与机械结构设计","description":"XC-star3（XC），南京邮电大学邮政工程本科生，专注机器人机械结构、嵌入式硬件与运动控制。RoboMaster、ROBOCON、西门子杯竞赛作品集。","url":"https://xc-star3.github.io/","inLanguage":"zh-CN","author":{"@type":"Person","name":"XC-star3","url":"https://xc-star3.github.io/"},"image":"https://xc-star3.github.io/assets/images/Avatar.jpg"}</script></head>
+<body class="has-particles">
+  <a class="skip-link" href="#top" data-i18n="accessibility.skipToContent">跳到主要内容</a>
+  <canvas class="mouse-particles" aria-hidden="true"></canvas>
+
+  <div class="opening-sequence" id="opening-sequence" hidden aria-hidden="true">
+    <div class="opening-shell">
+      <section class="opening-panel" role="dialog" aria-modal="true" aria-label="Homepage introduction" tabindex="-1">
+        <div class="opening-topbar">
+          <span class="opening-progress-count" id="opening-progress-count">04 s</span>
+          <button class="opening-skip" type="button" data-opening-skip="">跳过</button>
+          <div class="opening-progress-line" aria-hidden="true">
+            <span class="opening-progress-fill" id="opening-progress-fill"></span>
+          </div>
+        </div>
+
+        <div class="opening-viewport">
+          <div class="opening-track" id="opening-track"></div>
+        </div>
+
+        <div class="opening-controls">
+          <p class="opening-hint" id="opening-hint">4 秒后自动进入首页</p>
+
+          <div class="opening-actions">
+            <button class="opening-btn opening-btn-primary" type="button" data-opening-enter="">立即进入</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container nav-container">
+      <a href="#top" class="logo">
+        <span class="logo-text">XC</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="#projects" data-i18n="nav.projects">个人项目</a>
+          <a href="#opensource" data-i18n="nav.opensource">开源</a>
+          <a href="#timeline" data-i18n="nav.timeline">时间轴</a>
+          <a href="#awards" data-i18n="nav.awards">荣誉</a>
+          <a href="#skills" data-i18n="nav.skills">技术栈</a>
+          <a data-blog-link="" href="pages/posts/index.html" data-i18n="nav.blog">博客</a>
+        </div>
+
+        <div class="nav-controls">
+          <button class="control-btn lang-toggle" aria-label="Toggle Language">English</button>
+          <button class="control-btn theme-toggle" aria-label="Toggle Theme">
+            <i class="fas fa-sun sun-icon"></i>
+            <i class="fas fa-moon moon-icon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top" tabindex="-1">
+    <section id="intro" class="intro section-padding">
+      <div class="container intro-shell flex-center column">
+        <div class="avatar-container">
+          <img src="assets/images/Avatar.jpg" alt="XC的头像" class="avatar" data-i18n="intro.avatarAlt">
+        </div>
+
+        <p class="intro-kicker" data-i18n="home.eyebrow">作品集</p>
+        <h1 class="gradient-text" data-i18n="intro.title">你好，我是XC</h1>
+        <p class="hero-lead" data-i18n="home.lead">这里是我的个人作品集。</p>
+        <p class="subtitle" data-i18n="intro.desc">南京邮电大学邮政工程 2024 级本科生（大三），聚焦机器人机械结构、嵌入式硬件与运动控制。<br>参与 RoboMaster、ROBOCON 与西门子杯等竞赛项目，能够完成方案设计、装配调试、系统联调与现场问题闭环。<br>正在把比赛复盘、调试记录和工程方法整理成公开笔记。<br>邮箱：209358371@qq.com</p>
+
+        <div class="intro-actions">
+          <a href="#projects" class="primary-link" data-i18n="home.primaryCta">查看项目作品</a>
+          <a data-blog-link="" href="pages/posts/index.html" class="secondary-link" data-i18n="home.secondaryCta">访问博客</a>
+        </div>
+
+        <div class="intro-contact-links" aria-label="Contact Links"><a aria-label="GitHub" title="GitHub" rel="noopener noreferrer" target="_blank" href="https://github.com/XC-star3" class="intro-contact-link"><i class="fab fa-github"></i></a><a aria-label="邮箱" title="邮箱" href="mailto:209358371@qq.com" class="intro-contact-link"><i class="fas fa-envelope"></i></a></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker" data-i18n="projects.kicker">Projects</p>
+            <h2 data-i18n="projects.title">代表项目</h2>
+          </div>
+          <p class="section-desc" data-i18n="projects.sectionDesc">四段竞赛经历，从步兵机械结构、ROBOCON 电控与运动控制，到西门子杯硬件设计与 RoboMaster 赛场联调。</p>
+        </div>
+        <div class="projects-grid"><article class="card project-card">
+        <div class="project-thumbnail-wrapper">
+
+        <div class="project-thumbnail">
+          <img src="assets/images/projects/robomaster-2025-800.jpg" srcset="assets/images/projects/robomaster-2025-800.jpg 800w, assets/images/projects/robomaster-2025-1600.jpg 1600w" sizes="(max-width: 820px) 100vw, (max-width: 1080px) 50vw, 560px" alt="RoboMaster 2025 上海站步兵机器人" loading="lazy" decoding="async" style="object-position: center 55%">
+        </div>
+
+        </div>
+        <div class="project-info">
+          <div class="project-topline">
+            <span class="project-meta">步兵组机械组长 · 2024.09–2025.04</span>
+            <span class="project-award"><i class="fas fa-trophy" aria-hidden="true"></i>3V3 非甲级对抗赛三等奖</span>
+          </div>
+          <h3>RoboMaster 2025 步兵机器人</h3>
+          <p>主导步兵机器人机械系统方案设计，完成全向轮底盘、Yaw/Pitch 云台传动与整机布局；负责零部件采购、外发加工、装配交付与赛前改进。</p>
+          <div class="project-tags"><span class="project-tag">Mechanical Design</span><span class="project-tag">Omnidirectional Chassis</span><span class="project-tag">Gimbal Transmission</span><span class="project-tag">RoboMaster</span></div>
+          <a href="pages/projects/project1.html" class="project-link">查看详情</a>
+        </div>
+      </article><article class="card project-card">
+        <div class="project-thumbnail-wrapper">
+
+        <div class="project-thumbnail">
+          <img src="assets/images/projects/robocon-2026-800.jpg" srcset="assets/images/projects/robocon-2026-800.jpg 800w, assets/images/projects/robocon-2026-1600.jpg 1600w" sizes="(max-width: 820px) 100vw, (max-width: 1080px) 50vw, 560px" alt="ROBOCON 2026 仿生足式机器人" loading="lazy" decoding="async" style="object-position: center 50%">
+        </div>
+
+        </div>
+        <div class="project-info">
+          <div class="project-topline">
+            <span class="project-meta">电控组组长 · 2026.03–2026.07</span>
+            <span class="project-award"><i class="fas fa-trophy" aria-hidden="true"></i>障碍赛全国二等奖 · 任务赛全国三等奖</span>
+          </div>
+          <h3>ROBOCON 2026 仿生足式机器人</h3>
+          <p>负责电机调试、底层通信、运动控制算法与整机联调；面向复杂地形迭代控制策略，建立模块测试、整机联调与赛场复测流程。</p>
+          <div class="project-tags"><span class="project-tag">Motion Control</span><span class="project-tag">Motor Control</span><span class="project-tag">Embedded Systems</span><span class="project-tag">System Integration</span><span class="project-tag">ROBOCON</span></div>
+          <a href="pages/projects/project2.html" class="project-link">查看详情</a>
+        </div>
+      </article><article class="card project-card">
+        <div class="project-thumbnail-wrapper">
+
+      <div class="project-thumbnail project-thumbnail-placeholder" role="img" aria-label="西门子杯 2026 工业嵌入式系统">
+        <span class="project-thumbnail-icon"><i class="fas fa-microchip"></i></span>
+        <strong class="project-thumbnail-label">硬件设计</strong>
+        <span class="project-thumbnail-hint">原理图与板级设计为主，现场照片暂未整理。</span>
+      </div>
+
+        </div>
+        <div class="project-info">
+          <div class="project-topline">
+            <span class="project-meta">硬件负责人 · 2026.05–2026.07</span>
+            <span class="project-award"><i class="fas fa-trophy" aria-hidden="true"></i>全国初赛一等奖</span>
+          </div>
+          <h3>西门子杯 2026 工业嵌入式系统</h3>
+          <p>负责工业嵌入式系统硬件方案，使用立创EDA完成原理图与板级设计；配合软件完成系统联调与现场问题闭环。</p>
+          <div class="project-tags"><span class="project-tag">Embedded Systems</span><span class="project-tag">Hardware Design</span><span class="project-tag">PCB Design</span><span class="project-tag">Siemens Cup</span></div>
+          <a href="pages/projects/project3.html" class="project-link">查看详情</a>
+        </div>
+      </article><article class="card project-card">
+        <div class="project-thumbnail-wrapper">
+
+        <div class="project-thumbnail">
+          <img src="assets/images/projects/robomaster-2026-800.jpg" srcset="assets/images/projects/robomaster-2026-800.jpg 800w, assets/images/projects/robomaster-2026-1600.jpg 1600w" sizes="(max-width: 820px) 100vw, (max-width: 1080px) 50vw, 560px" alt="RoboMaster 2026 江苏站 3V3 对抗机器人" loading="lazy" decoding="async" style="object-position: center 50%">
+        </div>
+
+        </div>
+        <div class="project-info">
+          <div class="project-topline">
+            <span class="project-meta">3V3 非甲级对抗项目成员 · 2026.01–2026.04</span>
+            <span class="project-award"><i class="fas fa-trophy" aria-hidden="true"></i>3V3 非甲级对抗赛一等奖</span>
+          </div>
+          <h3>RoboMaster 2026 3V3 对抗机器人</h3>
+          <p>参与 3V3 非甲级对抗机器人研发与赛场联调，围绕机构装配、系统适配和现场问题排查推进整机交付。</p>
+          <div class="project-tags"><span class="project-tag">Mechanical Assembly</span><span class="project-tag">System Integration</span><span class="project-tag">Field Debugging</span><span class="project-tag">RoboMaster</span></div>
+          <a href="pages/projects/project4.html" class="project-link">查看详情</a>
+        </div>
+      </article></div>
+      </div>
+    </section>
+
+    <section id="opensource" class="section-padding subtle-band">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker" data-i18n="opensource.kicker">Code</p>
+            <h2 data-i18n="opensource.title">开源仓库</h2>
+          </div>
+          <p class="section-desc" data-i18n="opensource.desc">我的开源项目与工程实践。</p>
+        </div>
+        <div class="opensource-grid"><article class="os-card">
+        <div class="os-main">
+          <div class="os-header">
+            <h3 class="os-title">26Initial-RC-dog</h3>
+            <div class="os-tags"><span class="os-tag">ROBOCON</span><span class="os-tag">STM32</span><span class="os-tag">C++</span><span class="os-tag">Control</span></div>
+          </div>
+          <p class="os-desc">ROBOCON 2026 RC-Dog 控制框架，基于达妙 MC02（STM32H723VGT6），正在向 XRobot/libxr 架构迁移。</p>
+        </div>
+        <div class="os-actions"><a href="https://github.com/XC-star3/26Initial-RC-dog" target="_blank" rel="noopener noreferrer" class="os-btn"><i class="fab fa-github"></i> 代码仓库</a></div>
+      </article><article class="os-card">
+        <div class="os-main">
+          <div class="os-header">
+            <h3 class="os-title">CyberBeast 驱动板参数标定</h3>
+            <div class="os-tags"><span class="os-tag">Motor Control</span><span class="os-tag">Calibration</span><span class="os-tag">Embedded</span></div>
+          </div>
+          <p class="os-desc">海泰 7015 驱动器电机参数标定工具，用于守护兽驱动板调试。</p>
+        </div>
+        <div class="os-actions"><a href="https://github.com/XC-star3/CyberBeast-driver-board-parameter-calibration" target="_blank" rel="noopener noreferrer" class="os-btn"><i class="fab fa-github"></i> 代码仓库</a></div>
+      </article></div>
+      </div>
+    </section>
+
+    <section id="timeline" class="section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2 data-i18n="timeline.title">经历时间轴</h2>
+          </div>
+        </div>
+        <div class="timeline-container"><article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2026.07</span>
+        <div class="timeline-content">
+          <h3>ROBOCON 2026 与西门子杯双线收官</h3>
+          <p>作为 ROBOCON 电控组组长获障碍赛全国二等奖、任务赛全国三等奖；作为西门子杯硬件负责人获全国初赛一等奖。</p>
+        </div>
+      </article><article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2026.01–2026.04</span>
+        <div class="timeline-content">
+          <h3>RoboMaster 2026 江苏站</h3>
+          <p>参与 3V3 非甲级对抗机器人研发与赛场联调，围绕机构装配、系统适配和现场问题排查推进整机交付，获江苏站一等奖。</p>
+        </div>
+      </article><article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2025.04</span>
+        <div class="timeline-content">
+          <h3>RoboMaster 2025 上海站</h3>
+          <p>担任步兵组机械组长，主导全向轮底盘、Yaw/Pitch 云台传动与整机结构布局，获 3V3 非甲级对抗赛三等奖。</p>
+        </div>
+      </article><article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2024.09–2025.09</span>
+        <div class="timeline-content">
+          <h3>校科协骨干成员</h3>
+          <p>参与校内科技活动组织与技术交流，协助成员培养和项目活动执行，参与学校科创成果展示。</p>
+        </div>
+      </article><article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2024.09–至今</span>
+        <div class="timeline-content">
+          <h3>Xrobot 机器人社团创始成员</h3>
+          <p>从零参与机器人战队和社团建设，推动机械、电控与算法方向的人员组织、项目分工和训练流程落地；参与新生培养与技术传承。</p>
+        </div>
+      </article><article class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2024.09</span>
+        <div class="timeline-content">
+          <h3>进入南京邮电大学</h3>
+          <p>就读邮政工程本科，确定机器人与嵌入式方向，开始系统补齐机械、电控与控制基础。</p>
+        </div>
+      </article></div>
+      </div>
+    </section>
+
+    <section id="awards" class="section-padding subtle-band">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker" data-i18n="awards.kicker">Awards</p>
+            <h2 data-i18n="awards.title">荣誉奖项</h2>
+          </div>
+          <p class="section-desc" data-i18n="awards.desc">竞赛奖项与阶段性成果。</p>
+        </div>
+        <ul class="awards-list"><li class="award-item">
+        <span class="award-date">2026.07</span>
+        <span class="award-title">第二十五届全国大学生机器人大赛 ROBOCON 仿生足式机器人挑战赛 · 障碍赛</span>
+        <span class="award-level">全国二等奖</span>
+      </li><li class="award-item">
+        <span class="award-date">2026.07</span>
+        <span class="award-title">第二十五届全国大学生机器人大赛 ROBOCON 仿生足式机器人挑战赛 · 任务赛</span>
+        <span class="award-level">全国三等奖</span>
+      </li><li class="award-item">
+        <span class="award-date">2026.07</span>
+        <span class="award-title">2026 年“西门子杯”中国智能制造挑战赛全国初赛 · 工业嵌入式系统开发方向</span>
+        <span class="award-level">全国初赛一等奖</span>
+      </li><li class="award-item">
+        <span class="award-date">2026.04</span>
+        <span class="award-title">第二十五届全国大学生机器人大赛 RoboMaster 2026 机甲大师高校联盟赛（江苏站）· 3V3 非甲级对抗赛</span>
+        <span class="award-level">一等奖</span>
+      </li><li class="award-item">
+        <span class="award-date">2025.04</span>
+        <span class="award-title">第二十四届全国大学生机器人大赛 RoboMaster 2025 机甲大师高校联盟赛（上海站）· 3V3 非甲级对抗赛</span>
+        <span class="award-level">三等奖</span>
+      </li></ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker" data-i18n="skills.kicker">Stack</p>
+            <h2 data-i18n="skills.title">技术栈</h2>
+          </div>
+          <p class="section-desc" data-i18n="skills.desc">从机械结构、嵌入式硬件到运动控制与仿真，这些是我在项目中实际使用的工具和方法。</p>
+        </div>
+        <div class="skills-wrapper"><section class="skill-category">
+        <h3>机械与结构</h3>
+        <div class="skill-list">
+          <div class="skill-badge"><i class="fas fa-cube"></i> SolidWorks</div><div class="skill-badge"><i class="fas fa-drafting-compass"></i> Creo</div><div class="skill-badge"><i class="fas fa-cubes"></i> Fusion 360</div><div class="skill-badge"><i class="fas fa-ruler-combined"></i> Structural Design</div><div class="skill-badge"><i class="fas fa-toolbox"></i> Assembly</div>
+        </div>
+      </section><section class="skill-category">
+        <h3>嵌入式与硬件</h3>
+        <div class="skill-list">
+          <div class="skill-badge"><i class="fas fa-microchip"></i> STM32</div><div class="skill-badge"><i class="fas fa-screwdriver-wrench"></i> Keil MDK</div><div class="skill-badge"><i class="fas fa-code"></i> C / C++</div><div class="skill-badge"><i class="fas fa-network-wired"></i> CAN</div><div class="skill-badge"><i class="fas fa-plug"></i> I2C / SPI</div><div class="skill-badge"><i class="fas fa-pencil-ruler"></i> LCEDA</div><div class="skill-badge"><i class="fas fa-layer-group"></i> PCB Design</div>
+        </div>
+      </section><section class="skill-category">
+        <h3>控制与仿真</h3>
+        <div class="skill-list">
+          <div class="skill-badge"><i class="fas fa-sliders"></i> Motor Tuning</div><div class="skill-badge"><i class="fas fa-wave-square"></i> PID</div><div class="skill-badge"><i class="fas fa-diagram-project"></i> State Machine</div><div class="skill-badge"><i class="fas fa-link"></i> System Integration</div><div class="skill-badge"><i class="fas fa-globe"></i> Webots</div><div class="skill-badge"><i class="fas fa-cube"></i> MuJoCo</div><div class="skill-badge"><i class="fas fa-vr-cardboard"></i> Isaac Sim</div><div class="skill-badge"><i class="fas fa-flask"></i> mjlab</div>
+        </div>
+      </section><section class="skill-category">
+        <h3>工具链</h3>
+        <div class="skill-list">
+          <div class="skill-badge"><i class="fab fa-linux"></i> Linux</div><div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div><div class="skill-badge"><i class="fas fa-code"></i> VS Code</div><div class="skill-badge"><i class="fab fa-python"></i> Python</div>
+        </div>
+      </section></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-i18n="footer.copyright">© 2024-2026 XC-star3 (XC) · 209358371@qq.com</footer>
+
+  <script src="assets/js/shared.js" defer></script>
+  <script defer src="assets/js/site-config.js"></script>
+  <script src="assets/js/fallback-zh.js" defer></script>
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/site-data.js" defer></script>
+  <script src="assets/js/render.js" defer></script>
+  <script src="assets/js/opening-data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

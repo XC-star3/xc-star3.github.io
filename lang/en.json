@@ -1,0 +1,230 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "projects": "Portfolio",
+    "opensource": "Open Source",
+    "timeline": "Timeline",
+    "awards": "Awards",
+    "skills": "Tech Stack"
+  },
+  "meta": {
+    "homeTitle": "XC | Robotics Motion Control & Mechanical Design",
+    "blogTitle": "Blog | XC",
+    "project1Title": "RoboMaster 2025 Infantry Robot | XC",
+    "project2Title": "ROBOCON 2026 Bionic Legged Robot | XC",
+    "project3Title": "Siemens Cup 2026 Industrial Embedded System | XC",
+    "project4Title": "RoboMaster 2026 3V3 Combat Robot | XC"
+  },
+  "intro": {
+    "avatarAlt": "XC's avatar",
+    "title": "Hi, I'm XC",
+    "desc": "Undergraduate in Postal Engineering at Nanjing University of Posts and Telecommunications (Class of 2028, junior), focused on robot mechanical design, embedded hardware, and motion control.<br>Competition experience across RoboMaster, ROBOCON, and the Siemens Cup — from concept and assembly to system integration and on-site debugging.<br>Turning competition retrospectives and debugging notes into public engineering write-ups.<br>Email: 209358371@qq.com"
+  },
+  "home": {
+    "eyebrow": "Portfolio",
+    "lead": "This is my personal portfolio.",
+    "primaryCta": "Browse selected projects",
+    "secondaryCta": "Visit blog"
+  },
+  "projects": {
+    "kicker": "Projects",
+    "title": "Selected Projects",
+    "mediaReserved": "Blueprints & Docs",
+    "mediaHint": "This project is documented through design files and notes; field photos are not available yet.",
+    "sectionDesc": "Four competition projects spanning infantry mechanical design, ROBOCON control and motion, Siemens Cup hardware design, and RoboMaster field integration.",
+    "viewDetail": "View Details",
+    "item1": {
+      "title": "RoboMaster 2025 Infantry Robot",
+      "desc": "Led the infantry robot's mechanical system: omnidirectional chassis, Yaw/Pitch gimbal transmission, and overall layout; handled parts sourcing, machining, assembly, and pre-event improvements.",
+      "meta": "Mechanical Lead, Infantry · 2024.09–2025.04",
+      "award": "3V3 Non-Armored · 3rd Prize",
+      "imageAlt": "RoboMaster 2025 Shanghai infantry robot"
+    },
+    "item2": {
+      "title": "ROBOCON 2026 Bionic Legged Robot",
+      "desc": "Owned motor bring-up, low-level communication, motion-control algorithms, and full-robot integration; iterated control strategies for complex terrain and built module/integration/field validation loops.",
+      "meta": "Electrical Lead · 2026.03–2026.07",
+      "award": "National 2nd (Obstacle) · National 3rd (Task)",
+      "imageAlt": "ROBOCON 2026 bionic legged robot"
+    },
+    "item3": {
+      "title": "Siemens Cup 2026 Industrial Embedded System",
+      "desc": "Led the industrial embedded hardware design, completing schematics and board-level design in LCEDA; worked with software on system integration and on-site issue closure.",
+      "meta": "Hardware Lead · 2026.05–2026.07",
+      "award": "National Preliminary · 1st Prize",
+      "placeholderLabel": "Hardware Design",
+      "placeholderHint": "Schematic and board-level design; field photos are not available yet."
+    },
+    "item4": {
+      "title": "RoboMaster 2026 3V3 Combat Robot",
+      "desc": "Contributed to the 3V3 non-armored combat robot's development and field integration, covering mechanism assembly, system adaptation, and on-site troubleshooting.",
+      "meta": "3V3 Non-Armored Team Member · 2026.01–2026.04",
+      "award": "3V3 Non-Armored · 1st Prize",
+      "imageAlt": "RoboMaster 2026 Jiangsu 3V3 combat robot"
+    }
+  },
+  "project1": {
+    "kicker": "RoboMaster 2025",
+    "title": "RoboMaster 2025 Shanghai · Infantry Robot",
+    "role": "Mechanical Lead, Infantry",
+    "period": "2024.09–2025.04",
+    "award": "3V3 Non-Armored · 3rd Prize",
+    "mediaAlt": "RoboMaster 2025 Shanghai infantry robot",
+    "mediaCaption": "RoboMaster 2025 Shanghai · Infantry Robot",
+    "desc": "Led the infantry robot's mechanical system design, including the omnidirectional chassis, Yaw/Pitch gimbal transmission, and overall structural layout, while coordinating interfaces with the electronics and algorithm teams.<br><br>Handled parts sourcing, external machining, and assembly delivery; completed full-robot assembly, structural inspection, and pre-event improvements.<br><br>Worked with the electronics and algorithm teams on chassis motion, gimbal transmission, and full-robot control integration; diagnosed and resolved structural interference, assembly fit, and mechanism-operation issues.<br><br><strong>Technical focus</strong><ul><li>Omnidirectional chassis and Yaw/Pitch gimbal transmission design</li><li>Overall structural layout and mechanical/electronics/algorithm interface coordination</li><li>Assembly, structural inspection, and field issue closure</li></ul>"
+  },
+  "project2": {
+    "kicker": "ROBOCON 2026",
+    "title": "ROBOCON 2026 · Bionic Legged Robot",
+    "role": "Electrical Lead",
+    "period": "2026.03–2026.07",
+    "award": "National 2nd (Obstacle) · National 3rd (Task)",
+    "mediaAlt": "ROBOCON 2026 bionic legged robot",
+    "mediaCaption": "ROBOCON 2026 · Bionic Legged Robot",
+    "mediaAlt2": "Nanjing University of Posts and Telecommunications ROBOCON 2026 team with the robot",
+    "mediaCaption2": "Nanjing University of Posts and Telecommunications ROBOCON 2026 Team",
+    "desc": "Owned motor bring-up, low-level communication, motion-control algorithms, and full-robot integration, including interface validation between drivers, sensors, and the main controller.<br><br>For complex terrain and continuous tasks, iterated motor parameters and motion-control strategies to improve motion stability and task consistency.<br><br>Built a validation loop across module tests, full-robot integration, and field re-tests; diagnosed and closed communication, actuator, and strategy-parameter issues. Adapted the task flow to the competition rules.<br><br><strong>Technical focus</strong><ul><li>Motor parameter tuning and low-level communication validation</li><li>Motion-control strategy iteration for complex terrain</li><li>Module testing, full-robot integration, and field re-test workflow</li></ul>",
+    "links": {
+      "code": "Control Framework"
+    }
+  },
+  "project3": {
+    "kicker": "Siemens Cup 2026",
+    "title": "Siemens Cup 2026 · Industrial Embedded System",
+    "role": "Hardware Lead",
+    "period": "2026.05–2026.07",
+    "award": "National Preliminary · 1st Prize",
+    "desc": "Led the hardware side of an industrial embedded system, breaking the task requirements into controllers, sensors, actuators, and communication interfaces.<br><br>Completed hardware schematics and board-level design in LCEDA, advancing component selection, signal chains, and debugging preparation around system functions and interface constraints.<br><br>Worked with the software team on system integration; diagnosed, modified, and re-tested hardware for on-site issues to support stable task execution.<br><br><strong>Technical focus</strong><ul><li>Controller, sensor, actuator, and communication-interface decomposition</li><li>LCEDA schematic and PCB board-level design</li><li>Hardware diagnosis, modification, and system integration</li></ul>"
+  },
+  "project4": {
+    "kicker": "RoboMaster 2026",
+    "title": "RoboMaster 2026 Jiangsu · 3V3 Combat Robot",
+    "role": "3V3 Non-Armored Team Member",
+    "period": "2026.01–2026.04",
+    "award": "3V3 Non-Armored · 1st Prize",
+    "mediaAlt": "RoboMaster 2026 Jiangsu 3V3 combat robot",
+    "mediaCaption": "RoboMaster 2026 Jiangsu · 3V3 Combat Robot",
+    "desc": "Contributed to the development and field integration of a 3V3 non-armored combat robot, advancing full-robot delivery through mechanism assembly, system adaptation, and on-site troubleshooting.<br><br>Worked with the team on pre-event testing, fault reproduction, and live debugging to support stable robot operation in combat conditions.<br><br><strong>Technical focus</strong><ul><li>Mechanism assembly and system adaptation</li><li>Pre-event testing and fault reproduction</li><li>Live debugging and full-robot delivery</li></ul>"
+  },
+  "projects1": {
+    "mediaTitle": "Field Records",
+    "mediaDesc": "Photos from competitions and debugging sessions.",
+    "roleLabel": "Role",
+    "periodLabel": "Period",
+    "awardLabel": "Award"
+  },
+  "awards": {
+    "kicker": "Awards",
+    "title": "Honors & Awards",
+    "desc": "Competition awards and milestones.",
+    "item1": {
+      "date": "2026.07",
+      "title": "25th China University Robot Competition · ROBOCON Bionic Legged Robot Challenge — Obstacle Race",
+      "level": "National 2nd Prize"
+    },
+    "item2": {
+      "date": "2026.07",
+      "title": "25th China University Robot Competition · ROBOCON Bionic Legged Robot Challenge — Task Race",
+      "level": "National 3rd Prize"
+    },
+    "item3": {
+      "date": "2026.07",
+      "title": "2026 Siemens Cup China Intelligent Manufacturing Challenge — National Preliminary · Industrial Embedded System Development",
+      "level": "National Preliminary 1st Prize"
+    },
+    "item4": {
+      "date": "2026.04",
+      "title": "25th China University Robot Competition · RoboMaster 2026 University League (Jiangsu) — 3V3 Non-Armored",
+      "level": "1st Prize"
+    },
+    "item5": {
+      "date": "2025.04",
+      "title": "24th China University Robot Competition · RoboMaster 2025 University League (Shanghai) — 3V3 Non-Armored",
+      "level": "3rd Prize"
+    }
+  },
+  "opensource": {
+    "kicker": "Code",
+    "title": "Open Source",
+    "desc": "My open-source projects and engineering work.",
+    "btnCode": "Code",
+    "btnDoc": "Docs",
+    "item1": {
+      "title": "26Initial-RC-dog",
+      "desc": "Control framework for the 2026 ROBOCON RC-Dog, built on DM MC02 (STM32H723VGT6) and migrating toward the XRobot/libxr architecture.",
+      "tags": [
+        "ROBOCON",
+        "STM32",
+        "C++",
+        "Control"
+      ]
+    },
+    "item2": {
+      "title": "CyberBeast Driver-Board Calibration",
+      "desc": "Motor parameter calibration tooling for Haitian 7015 drivers on the CyberBeast driver board.",
+      "tags": [
+        "Motor Control",
+        "Calibration",
+        "Embedded"
+      ]
+    }
+  },
+  "timeline": {
+    "title": "Journey Timeline",
+    "event1": {
+      "date": "2026.07",
+      "title": "ROBOCON 2026 and Siemens Cup Finale",
+      "desc": "As ROBOCON electrical lead, won National 2nd Prize in the Obstacle Race and National 3rd Prize in the Task Race; as Siemens Cup hardware lead, won National Preliminary 1st Prize."
+    },
+    "event2": {
+      "date": "2026.01–2026.04",
+      "title": "RoboMaster 2026 Jiangsu League",
+      "desc": "Contributed to the development and field integration of a 3V3 non-armored combat robot, covering mechanism assembly, system adaptation, and on-site troubleshooting; won 1st Prize in Jiangsu."
+    },
+    "event3": {
+      "date": "2025.04",
+      "title": "RoboMaster 2025 Shanghai League",
+      "desc": "Served as infantry mechanical lead, leading the omnidirectional chassis, Yaw/Pitch gimbal transmission, and overall structural layout; won 3rd Prize in the 3V3 Non-Armored category."
+    },
+    "event4": {
+      "date": "2024.09–2025.09",
+      "title": "Core Member, University Science Association",
+      "desc": "Helped organize campus technology events and technical exchanges, supported member development and project execution, and contributed to the university's science-innovation showcase."
+    },
+    "event5": {
+      "date": "2024.09–Present",
+      "title": "Founding Member, Xrobot Robotics Club",
+      "desc": "Helped build the robotics team and club from scratch, driving people organization, project division, and training workflows across mechanical, electronics, and algorithm tracks; supported newcomer training and technical handover."
+    },
+    "event6": {
+      "date": "2024.09",
+      "title": "Started at Nanjing University of Posts and Telecommunications",
+      "desc": "Began undergraduate study in Postal Engineering, set a direction toward robotics and embedded systems, and started building mechanical, electronics, and control fundamentals."
+    }
+  },
+  "skills": {
+    "kicker": "Stack",
+    "title": "Tech Stack",
+    "desc": "Tools and methods I use across mechanical design, embedded hardware, motion control, and simulation.",
+    "embedded": "Embedded & Hardware",
+    "robotics": "Control & Simulation",
+    "software": "Toolchain",
+    "hardware": "Mechanical & Structure"
+  },
+  "contact": {
+    "github": "GitHub",
+    "email": "Email"
+  },
+  "footer": {
+    "copyright": "© 2024-2026 XC · 209358371@qq.com"
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content"
+  },
+  "blogStatus": {
+    "kicker": "COMING SOON",
+    "title": "The blog is still in development",
+    "description": "A standalone blog is on the way. Once it is ready, this entry will take you directly to the blog website.",
+    "backHome": "Back to home"
+  }
+}
