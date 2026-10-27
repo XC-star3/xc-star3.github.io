@@ -5,10 +5,18 @@ test.beforeEach(async ({ page }) => {
   await page.route('https://cdn.bootcdn.net/**', (route) => route.fulfill({ contentType: 'text/css', body: '' }));
 });
 
-test('system dark mode survives initialization and explicit choices persist', async ({ page }) => {
+test('first visits use light even on dark systems and explicit choices persist across pages', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'dark' });
+  for (const url of ['/', ...[1, 2, 3, 4].map((n) => `/pages/projects/project${n}.html`), '/pages/posts/index.html']) {
+    await page.goto(`${url}?nointro=1&noreveal=1`);
+    await expect.poll(() => page.evaluate(() => window.SiteInitialized)).toBe(true);
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  }
+  await page.locator('.theme-toggle').click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await page.goto('/?nointro=1&noreveal=1');
-  await expect.poll(() => page.evaluate(() => window.SiteInitialized)).toBe(true);
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await page.locator('.theme-toggle').click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
@@ -142,8 +150,12 @@ test('forced introduction supports keyboard exit and restores page access', asyn
 });
 
 test('single-page introduction closes automatically after four seconds', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
   await page.clock.install();
   await page.goto('/?intro=1');
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  expect(await page.locator('.opening-viewport').evaluate((el) =>
+    getComputedStyle(el).color === getComputedStyle(document.body).color)).toBe(true);
   await expect(page.locator('#opening-sequence')).toHaveClass(/is-visible/);
   await expect(page.locator('.opening-slide')).toHaveCount(1);
   await expect(page.locator('#opening-progress-count')).toHaveText('04 s');

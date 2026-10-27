@@ -396,16 +396,8 @@ html:not(.brand-revealing) .brand-reveal {
   touch-action: pan-y;
   isolation: isolate;
   background:
-    radial-gradient(ellipse 78% 58% at 50% 18%, rgba(141, 180, 255, 0.18), rgba(141, 180, 255, 0) 58%),
-    linear-gradient(180deg, #1d2533 0%, #131a24 100%);
-  --text-main: #f4f7fb;
-  --text-secondary: rgba(244, 247, 251, 0.78);
-  --text-faint: rgba(244, 247, 251, 0.58);
-  --accent: #8db4ff;
-  --accent-strong: #b7d0ff;
-  --line: rgba(244, 247, 251, 0.14);
-  --line-strong: rgba(244, 247, 251, 0.24);
-  --surface-soft: rgba(244, 247, 251, 0.06);
+    radial-gradient(ellipse 78% 58% at 50% 18%, var(--accent-soft), transparent 58%),
+    linear-gradient(180deg, var(--bg-subtle) 0%, var(--bg-body) 100%);
   color: var(--text-main);
 }
 
